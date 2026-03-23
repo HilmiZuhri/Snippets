@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS logical Properties</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .parentBlock1 {
+            background: green;
+            width: 350px;
+        }
+        .parentBlock1 .childBlock1 {
+            background: grey !important;
+            text-align: center;
+            margin-inline: 50px;
+            border-block: 8px dashed white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentBlock1">
+        <div class="childBlock1">
+            <h2>Example1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime sed voluptate unde aut eaque sint fugiat porro qui velit ex quo, ab vitae animi! Explicabo
+                 totam libero veniam animi. </p>
+        </div>
+    </div>
+</body>
+</html>
