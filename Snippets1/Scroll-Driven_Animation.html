@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-Driven Animation</title>
+    <style>
+        @keyframes shrink-name {
+            from {
+                font-size: 2em;
+            }
+            to {
+                font-size: 1.5em;
+            }
+        }
+        @keyframes add-shadow {
+            from {
+                box-shadow: none;
+                padding: 20px;
+            }
+            to {
+                box-shadow: 0 4px 2px -2px gray;
+                padding: 7px;
+            }
+        }
+        header {
+            position: sticky;
+            top: 0;
+            padding: 20px;
+            background: #4a90e2;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            animation: add-shadow linear both;
+        }
+        h2 {
+            animation: shrink-name linear both;
+        }
+        header, h2 {
+            animation-timeline: scroll();
+            animation-range: 0 150px;
+        }
+        .content {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Scroll-Driven Animation</h2>
+    </header>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consectetur voluptas, labore explicabo veritatis neque corporis ad, repudiandae maxime ea nemo quam.
+             Porro praesentium unde error impedit. Corrupti, neque ipsam!</p>
+        <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper.</p>
+        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.</p>
+        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</p>
+        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+        <p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero nemo eaque animi! Asperiores veniam, placeat hic sapiente totam quidem, distinctio perspiciatis
+             non repellendus quia commodi fugiat assumenda autem earum?</p>
+        <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper.</p>
+        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.</p>
+        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</p>
+        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+        <p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, eum assumenda unde facere a dicta at, harum corporis cupiditate sed impedit fugit natus quo
+             repellendus, ipsa iusto ab incidunt reprehenderit.</p>
+        <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper.</p>
+        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.</p>
+        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</p>
+        <p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+        <p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+    </div>
+</body>
+</html>
